@@ -1,0 +1,43 @@
+<meta charset ="UTF-8">
+
+<script>
+
+     function pulaLinha() {
+        document.write('<br><br>');
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+        var loginCadastrado = "legal";
+        var senhaCadastrada = "eusoulegal22";
+        var maximoTentativas = 2;
+        var tentativaAtual = 1;
+
+        while( tentativaAtual <= maximoTentativas) {
+            var loginInformado = prompt("Informe teu login");
+            var senhaInformada = prompt("Informe tua senha");
+
+            if(loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+                alert("Bem-vindo ao nosso site! ");
+                break;
+            }
+        }
+
+        var nome = prompt("Qual o teu nome?");
+        var idade = parseInt(prompt("Quantos anos você tem?"));
+        var resposta = prompt("Você estuda programação? Responda com o número 1 para SIM ou 2 para NÃO. ");
+       
+        if(resposta == 1) {
+            mostra("MUITO BOMMM, "+ nome + "! Continue estudando e você terá muito sucesso. ")
+        } else{
+
+        }   
+            if(resposta == 2) {
+            mostra("AHH QUE PENA... Mas, já tentou aprender programação? ");
+            mostra("Se não tentou, a ALURA é uma ótima para você aprender!")
+        }
+        
+        mostra("Foi um prazer tê-lo(a) conosco!!!")
+</script>
